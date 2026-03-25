@@ -6,4 +6,4 @@
 .form-group input:focus, .form-group select:focus { border-color: var(--accent-color); }
 .form-group.row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
 .btn-full { width: 100%; text-align: center; margin-top: 1rem; padding: 1rem; border-radius: 12px; }
-@media(max-width:768px){ .form-group.row { grid-template-columns: 1fr; } .booking-form { padding: 2rem; } }
+@media(max-width:768px){ .booking-section { padding: 4rem 1.5rem; } .form-group.row { grid-template-columns: 1fr; } .booking-form { padding: 2rem; } }

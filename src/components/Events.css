@@ -7,3 +7,8 @@
 .event-date { color: var(--accent-color); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; }
 .event-title { font-size: 1.8rem; font-family: var(--font-heading); margin-bottom: 1rem; }
 .event-desc { color: var(--text-secondary); line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .events-section { padding: 4rem 1.5rem; }
+  .events-grid { grid-template-columns: 1fr; }
+}

@@ -7,3 +7,7 @@
 .stars { color: var(--accent-color); font-size: 1.2rem; margin-bottom: 1.5rem; letter-spacing: 2px; }
 .testimonial-text { font-size: 1.05rem; line-height: 1.7; color: var(--text-primary); margin-bottom: 2rem; font-style: italic; }
 .testimonial-name { color: var(--text-secondary); font-weight: 600; font-size: 0.95rem; letter-spacing: 1px; text-transform: uppercase; }
+@media (max-width: 768px) {
+  .testimonials-section { padding: 4rem 1.5rem; }
+  .testimonial-card { padding: 2rem 1.5rem; }
+}

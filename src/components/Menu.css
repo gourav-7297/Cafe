@@ -79,7 +79,9 @@
 }
 
 @media (max-width: 768px) {
-  .menu-list { grid-template-columns: 1fr; padding: 2rem 1.5rem; }
+  .menu-section { padding: 4rem 1rem; }
+  .menu-list { grid-template-columns: 1fr; padding: 1.5rem 1rem; }
   .menu-tabs { justify-content: flex-start; padding: 0 1rem; }
-  .menu-tabs-wrapper { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .menu-tabs-wrapper { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 15px;}
+  .item-price { font-size: 1rem; }
 }

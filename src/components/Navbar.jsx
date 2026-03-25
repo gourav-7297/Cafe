@@ -3,6 +3,7 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,16 +19,23 @@ const Navbar = () => {
         <div className="nav-logo">
           <span className="heading-fancy">Canteen Stories</span>
         </div>
-        <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        
+        <div className={`nav-links-wrapper ${menuOpen ? 'open' : ''}`}>
+          <ul className="nav-links">
+            <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
+            <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+            <li><a href="#events" onClick={() => setMenuOpen(false)}>Events</a></li>
+            <li><a href="#menu" onClick={() => setMenuOpen(false)}>Menu</a></li>
+            <li><a href="#gallery" onClick={() => setMenuOpen(false)}>Gallery</a></li>
+            <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+          </ul>
+        </div>
+
         <div className="nav-action">
           <a href="#book" className="btn btn-small">Book a Table</a>
+          <button className="mobile-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+             {menuOpen ? '✕' : '☰'}
+          </button>
         </div>
       </div>
     </nav>

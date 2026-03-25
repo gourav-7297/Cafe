@@ -16,7 +16,7 @@ const About = () => {
             </div>
           </div>
           <div className="about-content">
-            <h2 className="section-title heading-fancy" style={{fontSize: '3.5rem', marginBottom: '1.5rem', color: 'var(--text-primary)'}}>The Story</h2>
+            <h2 className="section-title heading-fancy the-story-title">The Story</h2>
             <p className="about-text">
               Established with a passion for great food and perfect vibes, <strong>Canteen Stories</strong> / <strong>कैंटीन स्टोरीज</strong> is an eclectic café adorned with warm lights, comfortable seating, and a surreal vibe.
             </p>

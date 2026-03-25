@@ -18,6 +18,7 @@
 .experience-badge p { font-size: 1rem; font-weight: 600; text-transform: uppercase; }
 
 .section-title { font-size: 1.5rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 2px; }
+.the-story-title { font-size: clamp(2.5rem, 8vw, 3.5rem); margin-bottom: 1.5rem; color: var(--text-primary); text-transform: none; }
 .about-text { color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; }
 .about-text strong { color: var(--text-primary); }
 
@@ -41,5 +42,13 @@
   .offerings-container { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
+  .about-section { padding: 4rem 1.5rem; }
+  .offerings-banner { padding: 3rem 1.5rem; }
   .offerings-container { grid-template-columns: 1fr; }
+  .experience-badge { bottom: 10px; right: 10px; width: 80px; height: 80px; }
+  .experience-badge span { font-size: 1.5rem; }
+  .experience-badge p { font-size: 0.7rem; }
+  .about-quote { font-size: 1rem; padding-left: 1rem; margin: 1.5rem 0; }
+  .offering-item { padding: 1.5rem; }
+  .signature-font { font-size: 2rem; }
 }
