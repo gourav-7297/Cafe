@@ -1,0 +1,9 @@
+.events-section { padding: 6rem 2rem; background-color: var(--bg-color); }
+.events-container { max-width: 1200px; margin: 0 auto; }
+.events-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+.event-card { padding: 2.5rem 2rem; border-radius: 20px; transition: transform 0.3s; text-align: center; }
+.event-card:hover { transform: translateY(-10px); border-color: var(--accent-hover); }
+.active-event { background: rgba(209, 159, 94, 0.1); border: 1px solid rgba(209, 159, 94, 0.3); }
+.event-date { color: var(--accent-color); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; }
+.event-title { font-size: 1.8rem; font-family: var(--font-heading); margin-bottom: 1rem; }
+.event-desc { color: var(--text-secondary); line-height: 1.6; }
